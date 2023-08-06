@@ -3,18 +3,29 @@ let rect_width  = 20;
 let rect_height = 20;
 
 let corner_size = 35;
+
 let gem_x = 0; //gem can be positioned relative to the centre, offset is determined below in the draw function
 let gem_y = 0;
 let centre_gem = true;
 let centre_gem_size = 20;
-let centre_gem_rot=167;
-let offsetx = 50;
+let centre_gem_rot=0;
+
+let offsetx = 100;
 let offsety = 100;
-let gemoffsetx = 120;
-let gemoffsety = 130;
-let colorpal=['#FAF5CD','#FACCA5',"#ECBEFA"];
+
+let gemoffsetx = 100;
+let gemoffsety = 100;
+
+let chooseColour = 3; //set value from 0 to 4 to change color palettes
+let colorpalette=[
+    ['#FAF5CD','#FACCA5',"#ECBEFA"],
+    ['#CAD2C5','#2F3E46','#52796F','#84A98C'],
+    ['#F7F0F0','#484349','#8AF3FF'],
+    ['#EECFD4','#E6ADEC','#CFD4C5']];
+let colorpal = colorpalette[chooseColour];
+
 let sw = 1;//stroke color
-let rotating=67;
+let rotating=0;
 
 function setup_wallpaper(pWallpaper) {
   pWallpaper.output_mode(GRID_WALLPAPER); //develop_glyph
@@ -35,13 +46,12 @@ function my_symbol() { // do not rename this function. Treat this similarly to a
   rect(0,0,200,200);
   fill(random(colorpal));
   stroke(sw);
-  //arc(offsetx,offsety,200,200,0,360,OPEN);
+
   noStroke();
   rect(offsetx-corner_size/2,offsety-corner_size/2,corner_size+2,corner_size+2)
   stroke(sw);
   noStroke();
-  //arc(offsetx+90-corner_size/2, offsety+corner_size/2,corner_size, corner_size, 270, 0);
-  //arc(offsetx+90, offsety+corner_size*1.5,corner_size*1.3,corner_size*1.8, 180, 270);
+
   //cross hatch
   fill(random(colorpal));
   rect(0,35,200,20);
@@ -97,11 +107,6 @@ function my_symbol() { // do not rename this function. Treat this similarly to a
     fill(random(colorpal));
     stroke(sw);
     ellipse(0,0,centre_gem_size,centre_gem_size);
-    /*beginShape(LINES);
-      vertex(100+offsetx-35,100+offsety-35);
-      vertex(100+offsetx+35,100+offsety+35);
-    endShape();*/
-
   }
   
 }
