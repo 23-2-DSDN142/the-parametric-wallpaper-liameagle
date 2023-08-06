@@ -11,21 +11,30 @@ Wallpaper 1:
 //your parameter variables go here!
 let rect_width  = 20;
 let rect_height = 20;
-let paramter1 = 10;
-let paramter2 = true;
-let paramter3 = 50; 
-let paramter4 = 0; 
-let paramter5 = 60;
+
+let flower = true;
+let flowerOffsetX = 100; //Flower can be positioned relative to the centre
+let flowerOffsetY = 100;
+let flowerCentreSize = 20; 	//Size of the middle of the flower 
+let flowerRotation = 80; //Spin the flower in degrees
+let petalSize = 70; //Width of the arc() shape that draws each petal
+
+let crossOffsetX = 100;
+let crossOffsetY = 100;
+let crossRotation = 0;
+
+let cornerFill = true; 
+let chooseColour = 1; //set value from 0 to 4 to change color palettes
 
 function setup_wallpaper(pWallpaper) {
-  pWallpaper.output_mode(GRID_WALLPAPER);
+  pWallpaper.output_mode(GRID_WALLPAPER); //develop_glyph
   pWallpaper.resolution(NINE_LANDSCAPE);
   pWallpaper.show_guide(false); //set this to false when you're ready to print
 
   //Grid settings
-  pWallpaper.grid_settings.cell_width  = 100;
-  pWallpaper.grid_settings.cell_height = 100;
-  pWallpaper.grid_settings.row_offset  = 50;
+  pWallpaper.grid_settings.cell_width  = 200;
+  pWallpaper.grid_settings.cell_height = 200;
+  pWallpaper.grid_settings.row_offset  = 0;
 }
 
 /////////////////////////////////
@@ -33,21 +42,261 @@ function setup_wallpaper(pWallpaper) {
 Wallpaper 2:
 
 //your parameter variables go here!
-let rect_width  = 10;
-let rect_height = 10;
-let paramter1 = 20;
-let paramter2 = false;
-let paramter3 = 50; 
-let paramter4 = 80; 
-let paramter5 = 30;
+let rect_width  = 20;
+let rect_height = 20;
+
+let flower = true;
+let flowerOffsetX = 100; //Flower can be positioned relative to the centre
+let flowerOffsetY = 100;
+let flowerCentreSize = 30; 	//Size of the middle of the flower 
+let flowerRotation = 0; //Spin the flower in degrees
+let petalSize = 30; //Width of the arc() shape that draws each petal
+
+let crossOffsetX = 100;
+let crossOffsetY = 100;
+let crossRotation = 0;
+
+let cornerFill = true; 
+let chooseColour = 2; //set value from 0 to 4 to change color palettes
 
 function setup_wallpaper(pWallpaper) {
-  pWallpaper.output_mode(GRID_WALLPAPER);
+  pWallpaper.output_mode(GRID_WALLPAPER); //develop_glyph
   pWallpaper.resolution(NINE_LANDSCAPE);
   pWallpaper.show_guide(false); //set this to false when you're ready to print
 
   //Grid settings
-  pWallpaper.grid_settings.cell_width  = 100;
-  pWallpaper.grid_settings.cell_height = 100;
+  pWallpaper.grid_settings.cell_width  = 200;
+  pWallpaper.grid_settings.cell_height = 200;
+  pWallpaper.grid_settings.row_offset  = 0;
+}
+
+/////////////////////////////////
+
+Wallpaper 3:
+
+//your parameter variables go here!
+let rect_width  = 20;
+let rect_height = 20;
+
+let flower = true;
+let flowerOffsetX = 100; //Flower can be positioned relative to the centre
+let flowerOffsetY = 100;
+let flowerCentreSize = 100; 	//Size of the middle of the flower 
+let flowerRotation = 6; //Spin the flower in degrees
+let petalSize = 100; //Width of the arc() shape that draws each petal
+
+let crossOffsetX = 100;
+let crossOffsetY = 100;
+let crossRotation = 0;
+
+let cornerFill = false; 
+let chooseColour = 3; //set value from 0 to 4 to change color palettes
+
+function setup_wallpaper(pWallpaper) {
+  pWallpaper.output_mode(GRID_WALLPAPER); //develop_glyph
+  pWallpaper.resolution(NINE_LANDSCAPE);
+  pWallpaper.show_guide(false); //set this to false when you're ready to print
+
+  //Grid settings
+  pWallpaper.grid_settings.cell_width  = 200;
+  pWallpaper.grid_settings.cell_height = 200;
+  pWallpaper.grid_settings.row_offset  = 0;
+}
+
+/////////////////////////////////
+
+Wallpaper 4:
+
+//your parameter variables go here!
+let rect_width  = 20;
+let rect_height = 20;
+
+let flower = true;
+let flowerOffsetX = 24; //Flower can be positioned relative to the centre
+let flowerOffsetY = 70;
+let flowerCentreSize = 30; 	//Size of the middle of the flower 
+let flowerRotation = 65; //Spin the flower in degrees
+let petalSize = 20; //Width of the arc() shape that draws each petal
+
+let crossOffsetX = 150;
+let crossOffsetY = 100;
+let crossRotation = 14;
+
+let cornerFill = false; 
+let chooseColour = 3; //set value from 0 to 4 to change color palettes
+
+function setup_wallpaper(pWallpaper) {
+  pWallpaper.output_mode(GRID_WALLPAPER); //develop_glyph
+  pWallpaper.resolution(NINE_LANDSCAPE);
+  pWallpaper.show_guide(false); //set this to false when you're ready to print
+
+  //Grid settings
+  pWallpaper.grid_settings.cell_width  = 200;
+  pWallpaper.grid_settings.cell_height = 200;
+  pWallpaper.grid_settings.row_offset  = 0;
+}
+
+/////////////////////////////////
+
+Wallpaper 5:
+
+//your parameter variables go here!
+let rect_width  = 20;
+let rect_height = 20;
+
+let flower = false;
+let flowerOffsetX = 24; //Flower can be positioned relative to the centre
+let flowerOffsetY = 70;
+let flowerCentreSize = 30; 	//Size of the middle of the flower 
+let flowerRotation = 65; //Spin the flower in degrees
+let petalSize = 20; //Width of the arc() shape that draws each petal
+
+let crossOffsetX = 100;
+let crossOffsetY = 100;
+let crossRotation = 0;
+
+let cornerFill = true; 
+let chooseColour = 0; //set value from 0 to 4 to change color palettes
+
+function setup_wallpaper(pWallpaper) {
+  pWallpaper.output_mode(GRID_WALLPAPER); //develop_glyph
+  pWallpaper.resolution(NINE_LANDSCAPE);
+  pWallpaper.show_guide(false); //set this to false when you're ready to print
+
+  //Grid settings
+  pWallpaper.grid_settings.cell_width  = 200;
+  pWallpaper.grid_settings.cell_height = 200;
+  pWallpaper.grid_settings.row_offset  = 0;
+}
+
+/////////////////////////////////
+
+Wallpaper 6:
+
+//your parameter variables go here!
+let rect_width  = 20;
+let rect_height = 20;
+
+let flower = true;
+let flowerOffsetX = 0; //Flower can be positioned relative to the centre
+let flowerOffsetY = 0;
+let flowerCentreSize = 30; 	//Size of the middle of the flower 
+let flowerRotation = 5; //Spin the flower in degrees
+let petalSize = 45; //Width of the arc() shape that draws each petal
+
+let crossOffsetX = 100;
+let crossOffsetY = 100;
+let crossRotation = 0;
+
+let cornerFill = true; 
+let chooseColour = 0; //set value from 0 to 4 to change color palettes
+
+function setup_wallpaper(pWallpaper) {
+  pWallpaper.output_mode(GRID_WALLPAPER); //develop_glyph
+  pWallpaper.resolution(NINE_LANDSCAPE);
+  pWallpaper.show_guide(false); //set this to false when you're ready to print
+
+  //Grid settings
+  pWallpaper.grid_settings.cell_width  = 200;
+  pWallpaper.grid_settings.cell_height = 200;
+  pWallpaper.grid_settings.row_offset  = 0;
+}
+
+/////////////////////////////////
+
+Wallpaper 7:
+
+//your parameter variables go here!
+let rect_width  = 20;
+let rect_height = 20;
+
+let flower = false;
+let flowerOffsetX = 100; //Flower can be positioned relative to the centre
+let flowerOffsetY = 100;
+let flowerCentreSize = 30; 	//Size of the middle of the flower 
+let flowerRotation = 5; //Spin the flower in degrees
+let petalSize = 45; //Width of the arc() shape that draws each petal
+
+let crossOffsetX = 100;
+let crossOffsetY = 100;
+let crossRotation = 45;
+
+let cornerFill = false; 
+let chooseColour = 2; //set value from 0 to 4 to change color palettes
+
+function setup_wallpaper(pWallpaper) {
+  pWallpaper.output_mode(GRID_WALLPAPER); //develop_glyph
+  pWallpaper.resolution(NINE_LANDSCAPE);
+  pWallpaper.show_guide(false); //set this to false when you're ready to print
+
+  //Grid settings
+  pWallpaper.grid_settings.cell_width  = 200;
+  pWallpaper.grid_settings.cell_height = 200;
+  pWallpaper.grid_settings.row_offset  = 0;
+}
+
+/////////////////////////////////
+
+Wallpaper 8:
+
+//your parameter variables go here!
+let rect_width  = 20;
+let rect_height = 20;
+
+let flower = false;
+let flowerOffsetX = 100; //Flower can be positioned relative to the centre
+let flowerOffsetY = 100;
+let flowerCentreSize = 30; 	//Size of the middle of the flower 
+let flowerRotation = 5; //Spin the flower in degrees
+let petalSize = 45; //Width of the arc() shape that draws each petal
+
+let crossOffsetX = 100;
+let crossOffsetY = 100;
+let crossRotation = 30;
+
+let cornerFill = false; 
+let chooseColour = 3; //set value from 0 to 3 to change color palettes
+
+function setup_wallpaper(pWallpaper) {
+  pWallpaper.output_mode(GRID_WALLPAPER); //develop_glyph
+  pWallpaper.resolution(NINE_LANDSCAPE);
+  pWallpaper.show_guide(false); //set this to false when you're ready to print
+
+  //Grid settings
+  pWallpaper.grid_settings.cell_width  = 200;
+  pWallpaper.grid_settings.cell_height = 200;
+  pWallpaper.grid_settings.row_offset  = 0;
+}
+
+/////////////////////////////////
+
+Wallpaper 9:
+
+//your parameter variables go here!
+let rect_width  = 20;
+let rect_height = 20;
+
+let flower = true;
+let flowerOffsetX = 100; //Flower can be positioned relative to the centre
+let flowerOffsetY = 100;
+let flowerCentreSize = 1; 	//Size of the middle of the flower 
+let flowerRotation = 80; //Spin the flower in degrees
+let petalSize = 10; //Width of the arc() shape that draws each petal
+
+let crossOffsetX = 100;
+let crossOffsetY = 100;
+let crossRotation = 75;
+
+let cornerFill = true; 
+let chooseColour = 1; //set value from 0 to 4 to change color palettes
+
+function setup_wallpaper(pWallpaper) {
+  pWallpaper.output_mode(GRID_WALLPAPER); //develop_glyph
+  pWallpaper.resolution(NINE_LANDSCAPE);
+  pWallpaper.show_guide(false); //set this to false when you're ready to print
+
+  //Grid settings
+  pWallpaper.grid_settings.cell_width  = 200;
+  pWallpaper.grid_settings.cell_height = 200;
   pWallpaper.grid_settings.row_offset  = 0;
 }
